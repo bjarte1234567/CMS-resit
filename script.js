@@ -4,7 +4,7 @@ console.log(apiBase);
 fetch(apiBase)
   .then((response) => response.json())
   .then((posts) => {
-    // Loop gjennom alle postene og opprett HTML-struktur for hver post
+    
     const postItems = posts.map((post) => {
       return `
         <div>
